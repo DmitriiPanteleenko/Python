@@ -8,7 +8,6 @@ for _ in range(n):
 s = int(input())
 for _ in range(s):
     search_list.append(input())
-print(input_list)
 for i in range(len(input_list)):
     counter = 0
     for k in range(len(search_list)):
