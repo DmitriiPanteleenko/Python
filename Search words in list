@@ -1,0 +1,19 @@
+n = int(input())
+input_list = []
+search_list = []
+search_result = []
+counter = 0
+for _ in range(n):
+    input_list.append(input())
+s = int(input())
+for _ in range(s):
+    search_list.append(input())
+print(input_list)
+for i in range(len(input_list)):
+    counter = 0
+    for k in range(len(search_list)):
+        if search_list[k].lower() in input_list[i].lower():
+            counter += 1
+            if counter == len(search_list):
+                search_result.append(input_list[i])
+print(*search_result, sep='\n')
